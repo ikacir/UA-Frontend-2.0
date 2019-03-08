@@ -13,6 +13,7 @@ import NoMatch from './pages/noMatch';
 import MemberInterview from './pages/member-interview';
 
 import './App.css';
+import Project from './pages/project';
 
 
 class App extends Component {
@@ -46,6 +47,10 @@ class App extends Component {
                <Route 
                 exact path={routes.MEMBER_INTERVIEW}
                 component={MemberInterview}
+              />
+              <Route 
+                exact path={routes.PROJECT}
+                component={Project}
               />
 
               <Route path="*" component={NoMatch} />
